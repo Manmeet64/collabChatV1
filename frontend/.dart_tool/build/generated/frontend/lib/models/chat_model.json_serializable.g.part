@@ -1,0 +1,24 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$ChatImpl _$$ChatImplFromJson(Map<String, dynamic> json) => _$ChatImpl(
+  id: json['id'] as String,
+  type: json['type'] as String? ?? 'private',
+  members: (json['members'] as List<dynamic>).map((e) => e as String).toList(),
+  createdAt: DateTime.parse(json['createdAt'] as String),
+  lastMessage: json['lastMessage'] as String? ?? null,
+  lastMessageTime: json['lastMessageTime'] == null
+      ? null
+      : DateTime.parse(json['lastMessageTime'] as String),
+);
+
+Map<String, dynamic> _$$ChatImplToJson(_$ChatImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'type': instance.type,
+      'members': instance.members,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'lastMessage': instance.lastMessage,
+      'lastMessageTime': instance.lastMessageTime?.toIso8601String(),
+    };

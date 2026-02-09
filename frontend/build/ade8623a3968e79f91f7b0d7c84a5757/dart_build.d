@@ -1,0 +1,1 @@
+ /Users/manmeetsingh/Desktop/College/Flutter/CollabChat-manmeet/frontend/build/ade8623a3968e79f91f7b0d7c84a5757/dart_build_result.json:  /Users/manmeetsingh/Desktop/College/Flutter/CollabChat-manmeet/frontend/.dart_tool/package_config.json /Users/manmeetsingh/Desktop/College/Flutter/CollabChat-manmeet/frontend/pubspec.yaml /Users/manmeetsingh/flutter/bin/cache/dart-sdk/version

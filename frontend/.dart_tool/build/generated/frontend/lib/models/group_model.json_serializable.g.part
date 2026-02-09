@@ -1,0 +1,24 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$GroupImpl _$$GroupImplFromJson(Map<String, dynamic> json) => _$GroupImpl(
+  id: json['_id'] as String,
+  name: json['name'] as String,
+  members: const MembersConverter().fromJson(json['members']),
+  adminId: const AdminIdConverter().fromJson(json['adminId']),
+  createdAt: DateTime.parse(json['createdAt'] as String),
+  description: json['description'] as String? ?? null,
+  chatId: json['chatId'] as String? ?? null,
+);
+
+Map<String, dynamic> _$$GroupImplToJson(_$GroupImpl instance) =>
+    <String, dynamic>{
+      '_id': instance.id,
+      'name': instance.name,
+      'members': const MembersConverter().toJson(instance.members),
+      'adminId': const AdminIdConverter().toJson(instance.adminId),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'description': instance.description,
+      'chatId': instance.chatId,
+    };
